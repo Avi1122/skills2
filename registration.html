@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .cta-button {
+            background-color: #2575fc;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #6a11cb;
+        }
+
+        /* Registration Form Section */
+        .registration-form-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+            padding: 20px;
+            display: none;
+        }
+
+        .registration-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .registration-form h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        .form-field:focus {
+            border-color: #2575fc;
+            outline: none;
+        }
+
+        .form-submit {
+            background-color: #2575fc;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-submit:hover {
+            background-color: #6a11cb;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section (Landing Page) -->
+    <header>
+        <h1>Welcome to Skill Marketplace</h1>
+        <p>Connecting Freelancers & Clients Worldwide</p>
+        <a href="javascript:void(0);" class="cta-button" onclick="showRegistrationForm()">Register Now</a>
+    </header>
+
+    <!-- Registration Form Section (Initially Hidden) -->
+    <section class="registration-form-section" id="register-form">
+        <div class="registration-form">
+            <h2>Create Your Account</h2>
+            <form>
+                <!-- Full Name -->
+                <input type="text" class="form-field" placeholder="Full Name" required>
+
+                <!-- Email Address -->
+                <input type="email" class="form-field" placeholder="Email Address" required>
+
+                <!-- Password -->
+                <input type="password" class="form-field" placeholder="Password" required>
+
+                <!-- Confirm Password -->
+                <input type="password" class="form-field" placeholder="Confirm Password" required>
+
+                <!-- Phone Number -->
+                <input type="text" class="form-field" placeholder="Phone Number" required>
+
+                <!-- City -->
+                <input type="text" class="form-field" placeholder="City" required>
+
+                <!-- State -->
+                <input type="text" class="form-field" placeholder="State" required>
+
+                <!-- Address -->
+                <input type="text" class="form-field" placeholder="Address" required>
+
+                <!-- Submit Button -->
+                <button type="submit" class="form-submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Skill Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to show the registration form when "Register Now" is clicked
+        function showRegistrationForm() {
+            document.querySelector('header').style.display = 'none'; // Hide hero section
+            document.querySelector('.registration-form-section').style.display = 'flex'; // Show registration form
+        }
+    </script>
+
+</body>
+
+</html>

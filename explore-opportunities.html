@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Opportunities - Skill Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .cta-button {
+            background-color: #ff5a5f;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #ff767b;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 2.5rem;
+            color: #6a11cb;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Key Opportunities Section */
+        .opportunities-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .opportunity-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .opportunity {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 40px;
+        }
+
+        .opportunity:hover {
+            transform: scale(1.05);
+        }
+
+        .opportunity h3 {
+            font-size: 1.6rem;
+            color: #6a11cb;
+            margin-bottom: 10px;
+        }
+
+        .opportunity p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Animated Icons */
+        .opportunity img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            animation: bounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Explore Exciting Opportunities</h1>
+        <p>"Whether you're a freelancer or a client, we have the perfect opportunity for you!"</p>
+        <a href="index.html" class="cta-button">Back to Home</a>
+    </header>
+
+    <!-- Key Opportunities Section -->
+    <section class="opportunities-section">
+        <h2>For Freelancers</h2>
+        <div class="opportunity-container">
+            <!-- Freelance Projects Opportunity -->
+            <div class="opportunity">
+                <img src="images/project-icon.png" alt="Project Icon">
+                <h3>Freelance Projects</h3>
+                <p>Find the best freelance projects across various fields like Web Development, Content Writing, Graphic Design, and more.</p>
+            </div>
+            <!-- Hourly Jobs Opportunity -->
+            <div class="opportunity">
+                <img src="images/hourly-icon.png" alt="Hourly Icon">
+                <h3>Hourly Jobs</h3>
+                <p>Choose from a wide range of hourly gigs where you can work at your own pace and get paid accordingly.</p>
+            </div>
+            <!-- Skill-based Recommendations -->
+            <div class="opportunity">
+                <img src="images/skills-icon.png" alt="Skills Icon">
+                <h3>Skill-based Recommendations</h3>
+                <p>Let us suggest the best jobs tailored to your skills, experience, and preferences.</p>
+            </div>
+        </div>
+
+        <h2>For Clients</h2>
+        <div class="opportunity-container">
+            <!-- Post a Job Opportunity -->
+            <div class="opportunity">
+                <img src="images/post-job-icon.png" alt="Post Job Icon">
+                <h3>Post a Job</h3>
+                <p>Need a freelancer? Post your job with detailed descriptions, budget, and timelines and hire the best talent.</p>
+            </div>
+            <!-- Hire Full-Time/Part-Time -->
+            <div class="opportunity">
+                <img src="images/hire-icon.png" alt="Hire Icon">
+                <h3>Hire Full-Time/Part-Time</h3>
+                <p>Whether you need a full-time commitment or a part-time expert, find freelancers that fit your project needs.</p>
+            </div>
+            <!-- Secure Payment Option -->
+            <div class="opportunity">
+                <img src="images/payment-icon.png" alt="Payment Icon">
+                <h3>Secure Payment</h3>
+                <p>Pay freelancers with confidence using secure payment methods and escrow services to ensure quality work.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Skill Marketplace. Connecting Talent with Opportunity.</p>
+    </footer>
+
+</body>
+
+</html>

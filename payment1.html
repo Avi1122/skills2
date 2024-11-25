@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment - Skill Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .cta-button {
+            background-color: #2575fc;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #6a11cb;
+        }
+
+        .payment-method-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+            background-color: #f1f1f1;
+        }
+
+        .payment-method {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .payment-method:hover {
+            transform: scale(1.05);
+        }
+
+        .payment-method img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .form-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        .form-field:focus {
+            border-color: #2575fc;
+            outline: none;
+        }
+
+        .form-submit {
+            background-color: #2575fc;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .form-submit:hover {
+            background-color: #6a11cb;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Secure Payment</h1>
+        <p>Choose Your Preferred Payment Method</p>
+    </header>
+
+    <!-- Payment Methods Section -->
+    <section class="payment-method-section">
+        <!-- Credit Card Payment -->
+        <div class="payment-method" id="credit-card-payment">
+            <h2>Credit Card</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/PayPal_logo_2014.svg/100px-PayPal_logo_2014.svg.png" alt="Credit Card Payment">
+            <form>
+                <input type="text" class="form-field" placeholder="Cardholder Name" required>
+                <input type="text" class="form-field" placeholder="Card Number" required>
+                <input type="text" class="form-field" placeholder="Expiration Date (MM/YY)" required>
+                <input type="text" class="form-field" placeholder="CVV" required>
+                <button type="submit" class="form-submit">Pay with Credit Card</button>
+            </form>
+        </div>
+
+        <!-- PayPal Payment -->
+        <div class="payment-method" id="paypal-payment">
+            <h2>PayPal</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/PayPal_logo_2014.svg" alt="PayPal">
+            <button class="cta-button">Pay with PayPal</button>
+        </div>
+
+        <!-- Bank Transfer -->
+        <div class="payment-method" id="bank-transfer">
+            <h2>Bank Transfer</h2>
+            <p>Please transfer the payment to the following account:</p>
+            <p><strong>Account Number:</strong> 123456789</p>
+            <p><strong>Bank Name:</strong> XYZ Bank</p>
+            <button class="cta-button">Proceed with Bank Transfer</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Skill Marketplace. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
