@@ -14,14 +14,13 @@
             padding: 0;
             background-color: #f5f5f5;
             color: #333;
-            overflow-x: hidden;
         }
 
         header {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             padding: 60px 20px;
             text-align: center;
-            color: #fff;
+            color: white;
         }
 
         header h1 {
@@ -53,7 +52,7 @@
             background-color: #ff767b;
         }
 
-        /* Section Titles */
+        /* Key Opportunities Section */
         h2 {
             font-size: 2.5rem;
             color: #6a11cb;
@@ -61,7 +60,6 @@
             text-align: center;
         }
 
-        /* Key Opportunities Section */
         .opportunities-section {
             padding: 60px 20px;
             text-align: center;
@@ -101,29 +99,6 @@
             line-height: 1.6;
         }
 
-        /* Animated Icons */
-        .opportunity img {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 20px;
-            animation: bounce 1.5s ease-in-out infinite;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-
-            40% {
-                transform: translateY(-10px);
-            }
-
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-
-        /* Footer Section */
         footer {
             background-color: #333;
             color: white;
@@ -136,11 +111,12 @@
 
 <body>
 
-    <!-- Header Section -->
+    <!-- Header Section for Explore Opportunities -->
     <header>
         <h1>Explore Exciting Opportunities</h1>
         <p>"Whether you're a freelancer or a client, we have the perfect opportunity for you!"</p>
-        <a href="index.html" class="cta-button">Back to Home</a>
+        <!-- Link to Freelance Projects Page -->
+        <a href="freelance-projects.html" class="cta-button">Explore Freelance Projects</a>
     </header>
 
     <!-- Key Opportunities Section -->
@@ -149,21 +125,22 @@
         <div class="opportunity-container">
             <!-- Freelance Projects Opportunity -->
             <div class="opportunity">
-                <img src="images/project-icon.png" alt="Project Icon">
                 <h3>Freelance Projects</h3>
                 <p>Find the best freelance projects across various fields like Web Development, Content Writing, Graphic Design, and more.</p>
+                <!-- Link to Freelance Projects Page -->
+                <a href="freelance-projects.html" class="cta-button">See Available Projects</a>
             </div>
             <!-- Hourly Jobs Opportunity -->
             <div class="opportunity">
-                <img src="images/hourly-icon.png" alt="Hourly Icon">
                 <h3>Hourly Jobs</h3>
                 <p>Choose from a wide range of hourly gigs where you can work at your own pace and get paid accordingly.</p>
+                <a href="hourly-jobs.html" class="cta-button">See Hourly Jobs</a>
             </div>
             <!-- Skill-based Recommendations -->
             <div class="opportunity">
-                <img src="images/skills-icon.png" alt="Skills Icon">
                 <h3>Skill-based Recommendations</h3>
                 <p>Let us suggest the best jobs tailored to your skills, experience, and preferences.</p>
+                <a href="skill-based-recommendations.html" class="cta-button">Get Recommendations</a>
             </div>
         </div>
 
@@ -171,26 +148,25 @@
         <div class="opportunity-container">
             <!-- Post a Job Opportunity -->
             <div class="opportunity">
-                <img src="images/post-job-icon.png" alt="Post Job Icon">
                 <h3>Post a Job</h3>
                 <p>Need a freelancer? Post your job with detailed descriptions, budget, and timelines and hire the best talent.</p>
+                <a href="post-a-job.html" class="cta-button">Post a Job</a>
             </div>
             <!-- Hire Full-Time/Part-Time -->
             <div class="opportunity">
-                <img src="images/hire-icon.png" alt="Hire Icon">
                 <h3>Hire Full-Time/Part-Time</h3>
                 <p>Whether you need a full-time commitment or a part-time expert, find freelancers that fit your project needs.</p>
+                <a href="hire-full-time-part-time.html" class="cta-button">Hire Now</a>
             </div>
             <!-- Secure Payment Option -->
             <div class="opportunity">
-                <img src="images/payment-icon.png" alt="Payment Icon">
                 <h3>Secure Payment</h3>
                 <p>Pay freelancers with confidence using secure payment methods and escrow services to ensure quality work.</p>
+                <a href="secure-payment.html" class="cta-button">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Skill Marketplace. Connecting Talent with Opportunity.</p>
     </footer>
