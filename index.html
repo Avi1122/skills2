@@ -82,28 +82,54 @@
             color: white;
             width: 280px;
             text-align: center;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .feature:hover {
             transform: scale(1.05);
+            background-color: #8e44ad;
         }
 
         .feature img {
             width: 60px;
-            height: 60px; /* Adjust size as needed */
+            height: 60px;
             margin-bottom: 15px;
         }
 
         .feature h3 {
             margin: 15px 0;
             font-size: 1.5rem;
+            color: #fff; /* Standardized text color */
+            text-decoration: none; /* Removed underline */
         }
 
         .feature p {
             font-size: 1rem;
             line-height: 1.5;
+            color: #f2f2f2; /* Standardized text color */
+        }
+
+        .feature a {
+            text-decoration: none; /* Removed underline for links */
+            color: inherit; /* Match text color to surrounding content */
+        }
+
+        /* Animative Backgrounds */
+        .feature:nth-child(1) {
+            background-color: #3498db; /* Matches Fast Registration */
+        }
+
+        .feature:nth-child(2) {
+            background-color: #2ecc71; /* Matches Secure Payments */
+        }
+
+        .feature:nth-child(3) {
+            background-color: #e67e22; /* Matches Real-Time Chat */
+        }
+
+        .feature:nth-child(4) {
+            background-color: #9b59b6; /* Matches Project Management Tools */
         }
 
         /* Quotes Section */
@@ -172,7 +198,6 @@
             </div>
             <!-- Project Management Tools Feature -->
             <div class="feature">
-                <!-- Added Icon for Project Management Tools -->
                 <img src="images/project-management-icon.png" alt="Project Management Tools">
                 <h3>Project Management Tools</h3>
                 <p>Stay on track with built-in task management and milestone tracking tools.</p>
